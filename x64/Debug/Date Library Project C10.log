@@ -1,0 +1,20 @@
+﻿  Date Library Project C10.cpp
+C:\Users\dell\source\repos\Date Library Project C10\Date Library Project C10\clsString.h(39,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Date%20Library%20Project%20C10.cpp')
+  
+C:\Users\dell\source\repos\Date Library Project C10\Date Library Project C10\clsString.h(44,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Date%20Library%20Project%20C10.cpp')
+  
+C:\Users\dell\source\repos\Date Library Project C10\Date Library Project C10\clsString.h(56,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Date%20Library%20Project%20C10.cpp')
+  
+C:\Users\dell\source\repos\Date Library Project C10\Date Library Project C10\clsString.h(193,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Date%20Library%20Project%20C10.cpp')
+  
+C:\Users\dell\source\repos\Date Library Project C10\Date Library Project C10\clsString.h(324,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Date%20Library%20Project%20C10.cpp')
+  
+C:\Users\dell\source\repos\Date Library Project C10\Date Library Project C10\clsString.h(372,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Date%20Library%20Project%20C10.cpp')
+  
+  Date Library Project C10.vcxproj -> C:\Users\dell\source\repos\Date Library Project C10\x64\Debug\Date Library Project C10.exe
