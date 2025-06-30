@@ -1,0 +1,23 @@
+﻿  Project Find Client C11.cpp
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsString.h(39,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsString.h(44,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsString.h(56,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsString.h(193,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsString.h(324,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsString.h(372,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+C:\Users\dell\source\repos\Project Find Client C11\Project Find Client C11\clsBankClient.h(29,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Project%20Find%20Client%20C11.cpp')
+  
+  Project Find Client C11.vcxproj -> C:\Users\dell\source\repos\Project Find Client C11\x64\Debug\Project Find Client C11.exe
