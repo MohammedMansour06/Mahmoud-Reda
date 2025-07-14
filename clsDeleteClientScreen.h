@@ -40,11 +40,11 @@ public:
 
 		string AccountNumber = "";
 		cout << "\n Please Enter Account Number ?";
-		AccountNumber = clsInputValidate::ReadString();
+		AccountNumber = clsInputValidate::ReadNumber<string>();
 		while (!clsBankClient::IsClientExist(AccountNumber))
 		{
 			cout << "\n Account Number IS NOT Found   , Choose Another Account Number ? ";
-			AccountNumber = clsInputValidate::ReadString();
+			AccountNumber = clsInputValidate::ReadNumber<string>();
 		}
 
 		clsBankClient Client1 = clsBankClient::Find(AccountNumber);

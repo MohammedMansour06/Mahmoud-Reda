@@ -73,15 +73,15 @@ private :
 	static void _ReadUserInfo(clsUser& User)
 	{
 		cout << "\n Enter First Name ? ";
-		User.FirstName = clsInputValidate::ReadString();
+		User.FirstName = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Last Name ?  ";
-		User.LastName = clsInputValidate::ReadString();
+		User.LastName = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Email  ?";
-		User.Email = clsInputValidate::ReadString();
+		User.Email = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Phone ? ";
-		User.Phone = clsInputValidate::ReadString();
+		User.Phone = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter PassWord ? ";
-		User.PassWord = clsInputValidate::ReadString();
+		User.PassWord = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Permissions  ? ";
 		User.Permissions = _ReadPermissionsToSet();
 	}
@@ -111,13 +111,13 @@ public  :
 		_DrawScreenHeader("\t Update User Screen"); 
 
 		string UserName = "";  
-
-		UserName = clsInputValidate::ReadString(); 
+		cout << "\n Enter UserName ? \n "; 
+		UserName = clsInputValidate::ReadNumber<string>();
 
 		while (!clsUser::IsUserExist(UserName))
 		{
 			cout << "\n UserName Is Not Found ... Enter Another ? "; 
-			UserName = clsInputValidate::ReadString();
+			UserName = clsInputValidate::ReadNumber<string>();
 		}
 
 		clsUser User1 = clsUser::Find(UserName); 

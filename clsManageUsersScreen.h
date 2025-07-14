@@ -25,7 +25,7 @@ private  :
 	{
 		short Choise = 0; 
 		cout << "\n Choos What Do You To Do  ? "; 
-		Choise = clsInputValidate::ReadShortNumberBetween(1, 6); 
+		Choise = clsInputValidate::ReadNumberBetween<short>(1,6); 
 		return Choise; 
 	}
 

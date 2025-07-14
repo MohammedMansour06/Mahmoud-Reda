@@ -10,7 +10,8 @@ class clsInputValidate
 
 public:
 
-	static bool IsNumberBetween(short Number, short From, short To)
+	template<typename T>
+	static bool IsNumberBetween(T Number, T From, T To)
 	{
 		if (Number >= From && Number <= To)
 			return true;
@@ -18,14 +19,7 @@ public:
 			return false;
 	}
 
-	static bool IsNumberBetween(int Number, int From, int To)
-	{
-		if (Number >= From && Number <= To)
-			return true;
-		else
-			return false;
-
-	}
+	
 
 	static  double ReadPositiveNum()
 	{
@@ -39,40 +33,13 @@ public:
 		return Num; 
 	  }
 
-	static bool IsNumberBetween(double Number, double From, double To)
+	
+
+	
+	  template<typename T>
+	static T ReadNumber(string ErrorMessage = "Invalid Number, Enter again\n")
 	{
-		if (Number >= From && Number <= To)
-			return true;
-		else
-			return false;
-	}
-
-	static bool IsDateBetween(clsDate Date, clsDate From, clsDate To)
-	{
-		//Date>=From && Date<=To
-		if ((clsDate::IsDate1AfterDate2(Date, From) || clsDate::IsDate1EqualDate2(Date, From))
-			&&
-			(clsDate::IsDate1BeforeDate2(Date, To) || clsDate::IsDate1EqualDate2(Date, To))
-			)
-		{
-			return true;
-		}
-
-		//Date>=To && Date<=From
-		if ((clsDate::IsDate1AfterDate2(Date, To) || clsDate::IsDate1EqualDate2(Date, To))
-			&&
-			(clsDate::IsDate1BeforeDate2(Date, From) || clsDate::IsDate1EqualDate2(Date, From))
-			)
-		{
-			return true;
-		}
-
-		return false;
-	}
-
-	static int ReadIntNumber(string ErrorMessage = "Invalid Number, Enter again\n")
-	{
-		int Number;
+		T Number;
 		while (!(cin >> Number)) {
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -81,93 +48,26 @@ public:
 		return Number;
 	}
 
-	static int ReadIntNumberBetween(int From, int To, string ErrorMessage = "Number is not within range, Enter again:\n")
+	template<typename T>
+	static T ReadNumberBetween(T From, T To, string ErrorMessage = "Number is not within range, Enter again:\n")
 	{
-		int Number = ReadIntNumber();
+		T Number = ReadNumber<T>(ErrorMessage);
 
-		while (!IsNumberBetween(Number, From, To))
+		while (!IsNumberBetween<T>(Number, From, To))
 		{
 			cout << ErrorMessage;
-			Number = ReadIntNumber();
+			Number = ReadNumber<T>(ErrorMessage);
 		}
 		return Number;
 	}
 
-	static double ReadFloatNumber(string ErrorMessage = "Invalid Number, Enter again\n")
-	{
-		float Number;
-		while (!(cin >> Number)) {
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << ErrorMessage;
-		}
-		return Number;
-	}
-	static short  ReadShortNumber(string ErrorMessage = "Invalid Number, Enter again\n")
-	{
-		short Number;
-		while (!(cin >> Number)) {
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << ErrorMessage;
-		}
-		return Number;
-	}
 
-	static double ReadFloatNumberBetween(double From, double To, string ErrorMessage = "Number is not within range, Enter again:\n")
-	{
-		float Number = ReadFloatNumber();
-
-		while (!IsNumberBetween(Number, From, To)) {
-			cout << ErrorMessage;
-			Number = ReadDblNumber();
-		}
-		return Number;
-	}
-	static short  ReadShortNumberBetween(short From, short To, string ErrorMessage = "Number is not within range, Enter again:\n")
-	{
-		short  Number = ReadShortNumber();
-
-		while (!IsNumberBetween(Number, From, To)) {
-			cout << ErrorMessage;
-			Number = ReadShortNumber();
-		}
-		return Number;
-	}
-
-	static double ReadDblNumber(string ErrorMessage = "Invalid Number, Enter again\n")
-	{
-		double Number;
-		while (!(cin >> Number)) {
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << ErrorMessage;
-		}
-		return Number;
-	}
-
-	static double ReadDblNumberBetween(double From, double To, string ErrorMessage = "Number is not within range, Enter again:\n")
-	{
-		double Number = ReadDblNumber();
-
-		while (!IsNumberBetween(Number, From, To)) {
-			cout << ErrorMessage;
-			Number = ReadDblNumber();
-		}
-		return Number;
-	}
 
 	static bool IsValideDate(clsDate Date)
 	{
 		return	clsDate::IsValidDate(Date);
 	}
 
-	static string ReadString()
-	{
-		string  S1 = "";
-		// Usage of std::ws will extract allthe whitespace character
-		getline(cin >> ws, S1);
-		return S1;
-	}
+	
 };
 

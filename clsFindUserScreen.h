@@ -35,12 +35,12 @@ public  :
 		_DrawScreenHeader("\t Find User Screen"); 
 
 		string UserName = ""; 
-		UserName = clsInputValidate::ReadString(); 
+		UserName = clsInputValidate::ReadNumber<string>();
 
 		while (!clsUser::IsUserExist(UserName))
 		{
 			cout << "\n UserName Not Found , Enter Another ?  "; 
-			UserName = clsInputValidate::ReadString(); 
+			UserName = clsInputValidate::ReadNumber<string>();
 		}
 
 		clsUser User1 = clsUser::Find(UserName); 

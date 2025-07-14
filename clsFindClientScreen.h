@@ -37,12 +37,13 @@ public:
 		}
 		_DrawScreenHeader("\t Find Client Screen ");
 
+		cout << "\n Please Enter Account Number ? "; 
 		string AccountNumber = "";
-		AccountNumber = clsInputValidate::ReadString();
+		AccountNumber = clsInputValidate::ReadNumber<string>();
 		while (!clsBankClient::IsClientExist(AccountNumber))
 		{
 			cout << "\n The Account Number Is Not Founded , Enter Another Account Number ? ";
-			AccountNumber = clsInputValidate::ReadString();
+			AccountNumber = clsInputValidate::ReadNumber<string>();
 		}
 		clsBankClient Client1 = clsBankClient::Find(AccountNumber);
 

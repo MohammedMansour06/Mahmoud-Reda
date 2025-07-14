@@ -27,11 +27,11 @@ private   :
 	{
 		string AccountNumber;
 		cout << "\nPlease Enter Account Number to Transfer From: ";
-		AccountNumber = clsInputValidate::ReadString();
+		AccountNumber = clsInputValidate::ReadNumber<string>();
 		while (!clsBankClient::IsClientExist(AccountNumber))
 		{
 			cout << "\nAccount number is not found, choose another one: ";
-			AccountNumber = clsInputValidate::ReadString();
+			AccountNumber = clsInputValidate::ReadNumber<string>();
 		}
 		return AccountNumber;
 	}
@@ -42,12 +42,12 @@ private   :
 
 		cout << "\nEnter Transfer Amount? ";
 
-		Amount = clsInputValidate::ReadDblNumber();
+		Amount = clsInputValidate::ReadNumber<double>();
 
 		while (Amount > SourceClient.AccountBalance)
 		{
 			cout << "\nAmount Exceeds the available Balance, Enter another Amount ? ";
-			Amount = clsInputValidate::ReadDblNumber();
+			Amount = clsInputValidate::ReadNumber<double>();
 		}
 		return Amount;
 	}

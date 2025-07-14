@@ -31,17 +31,17 @@ private:
 	static void _ReadClientInfo(clsBankClient& Client)
 	{
 		cout << "\n Enter First Name ? ";
-		Client.FirstName = clsInputValidate::ReadString();
+		Client.FirstName = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Last Name ?  ";
-		Client.LastName = clsInputValidate::ReadString();
+		Client.LastName = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Email  ?";
-		Client.Email = clsInputValidate::ReadString();
+		Client.Email = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Phone ? ";
-		Client.Phone = clsInputValidate::ReadString();
+		Client.Phone = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Pin Code ? ";
-		Client.PinCode = clsInputValidate::ReadString();
+		Client.PinCode = clsInputValidate::ReadNumber<string>();
 		cout << "\n Enter Account Balance ? ";
-		Client.AccountBalance = clsInputValidate::ReadFloatNumber();
+		Client.AccountBalance = clsInputValidate::ReadNumber<float>();
 	}
 
 public:
@@ -56,12 +56,12 @@ public:
 
 		string AccountNumber = "";
 		cout << "\n Please Enter Account Number ? ";
-		AccountNumber = clsInputValidate::ReadString();
+		AccountNumber = clsInputValidate::ReadNumber<string>();
 
 		while (!clsBankClient::IsClientExist(AccountNumber))
 		{
 			cout << "\n Account NumberIs Not Found , please Enter Another One ? ";
-			AccountNumber = clsInputValidate::ReadString();
+			AccountNumber = clsInputValidate::ReadNumber<string>();
 		}
 
 		clsBankClient Client1 = clsBankClient::Find(AccountNumber);

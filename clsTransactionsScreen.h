@@ -22,7 +22,7 @@ private :
 	static short ReadTransactionsOptions()
 	{
 		cout << setw(37) << left << "" << "Choose What Do You Want To Do ? ... [1 To 6] "; 
-		short Choice = clsInputValidate::ReadShortNumberBetween(1, 6); 
+		short Choice = clsInputValidate::ReadNumberBetween<short>(1, 6); 
 		return Choice;
 	}
 	static void _GoBackToTransactionsMenueScreen()
