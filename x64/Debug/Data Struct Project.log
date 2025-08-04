@@ -1,0 +1,26 @@
+﻿  Data Struct Project.cpp
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsString.h(39,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsString.h(44,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsString.h(56,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsString.h(193,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsString.h(324,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsString.h(372,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsQueueLine.h(95,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+C:\Users\dell\source\repos\Data Struct Project\Data Struct Project\clsQueueLine.h(117,24): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Data%20Struct%20Project.cpp')
+  
+  Data Struct Project.vcxproj -> C:\Users\dell\source\repos\Data Struct Project\x64\Debug\Data Struct Project.exe
